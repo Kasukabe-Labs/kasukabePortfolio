@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-start justify-start px-4 sm:px-6 lg:px-8 pt-32">
+    <section className="min-h-screen w-full flex items-start justify-start px-4 sm:px-6 lg:px-8 pt-32">
       <div className="max-w-7xl mx-auto text-left">
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight ">
           Scalable solutions
@@ -26,7 +26,7 @@ const Hero = () => {
           </button>
         </div>
 
-        <div className="flex w-full max-w-sm items-center gap-1 mt-6">
+        <div className="flex w-full max-w-sm items-center gap-1 pt-16">
           <input
             type="email"
             placeholder="Enter your email"
