@@ -1,7 +1,9 @@
 
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface ProjectCardProps {
+  id: string;
   title: string;
   subtitle: string;
   description: string;
@@ -9,11 +11,11 @@ interface ProjectCardProps {
   tags: string[];
 }
 
-const ProjectCard = ({ title, subtitle, description, image, tags }: ProjectCardProps) => {
+const ProjectCard = ({ id, title, subtitle, description, image, tags }: ProjectCardProps) => {
   return (
-    <div className="group cursor-pointer">
-      <div className="bg-gray-900 rounded-2xl p-6 mb-6 hover:bg-gray-800 transition-all duration-300">
-        <div className="aspect-[4/3] bg-gray-700 rounded-xl mb-4 overflow-hidden">
+    <Link to={`/project/${id}`} className="group cursor-pointer block">
+      <div className="bg-card rounded-2xl p-6 mb-6 hover:bg-muted/20 transition-all duration-300 border border-border hover:border-primary/20">
+        <div className="aspect-[4/3] bg-muted rounded-xl mb-4 overflow-hidden">
           <img 
             src={image} 
             alt={title}
@@ -22,17 +24,17 @@ const ProjectCard = ({ title, subtitle, description, image, tags }: ProjectCardP
         </div>
         
         <div className="flex justify-between items-start mb-3">
-          <h3 className="text-xl font-semibold text-white">{title}</h3>
-          <ArrowUpRight size={20} className="text-gray-400 group-hover:text-white transition-colors" />
+          <h3 className="text-xl font-semibold text-foreground font-playfair">{title}</h3>
+          <ArrowUpRight size={20} className="text-muted-foreground group-hover:text-primary transition-colors" />
         </div>
         
-        <p className="text-sm text-gray-400 mb-3">{subtitle}</p>
+        <p className="text-sm text-primary mb-3 font-medium">{subtitle}</p>
         
         <div className="flex flex-wrap gap-2">
           {tags.map((tag, index) => (
             <span 
               key={index}
-              className="text-xs px-3 py-1 bg-gray-800 text-gray-300 rounded-full"
+              className="text-xs px-3 py-1 bg-muted text-muted-foreground rounded-full border border-border"
             >
               {tag}
             </span>
@@ -40,10 +42,10 @@ const ProjectCard = ({ title, subtitle, description, image, tags }: ProjectCardP
         </div>
       </div>
       
-      <p className="text-sm text-gray-400 leading-relaxed">
+      <p className="text-sm text-muted-foreground leading-relaxed">
         {description}
       </p>
-    </div>
+    </Link>
   );
 };
 

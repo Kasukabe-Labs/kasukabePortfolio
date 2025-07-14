@@ -5,11 +5,11 @@ const StudioSection = () => {
       <div className="max-w-7xl mx-auto">
         {/* Hero Image */}
         <div className="mb-16">
-          <div className="aspect-[21/9] bg-gray-800 rounded-2xl mb-8 overflow-hidden">
-            <div className="w-full h-full bg-gray-700 flex items-center justify-start pl-8">
+          <div className="aspect-[21/9] bg-muted rounded-2xl mb-8 overflow-hidden">
+            <div className="w-full h-full bg-muted flex items-center justify-start pl-8">
               <div className="text-left">
-                <h3 className="text-2xl md:text-4xl font-bold text-white mb-4">Studio</h3>
-                <p className="text-white/80 max-w-md">
+                <h3 className="text-2xl md:text-4xl font-bold text-foreground mb-4 font-playfair">Studio</h3>
+                <p className="text-muted-foreground max-w-md">
                   Where creativity meets technology to craft exceptional digital experiences
                 </p>
               </div>
@@ -19,8 +19,8 @@ const StudioSection = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-left">Studio</h2>
-            <p className="text-lg text-gray-400 mb-8 leading-relaxed text-left">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-left font-playfair">Studio</h2>
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed text-left">
               We create experiences across all digital platforms. 
               From concept to launch, we work with brands that share our 
               passion for creating impactful, lasting impressions.
@@ -28,8 +28,8 @@ const StudioSection = () => {
             
             <div className="space-y-6 text-left">
               <div>
-                <h4 className="text-xl font-semibold text-white mb-2">Research & Brand Strategy</h4>
-                <ul className="text-sm text-gray-400 space-y-1">
+                <h4 className="text-xl font-semibold text-foreground mb-2 font-playfair">Research & Brand Strategy</h4>
+                <ul className="text-sm text-muted-foreground space-y-1">
                   <li>• Brand Strategy</li>
                   <li>• User Research</li>
                   <li>• Market Analysis</li>
@@ -38,8 +38,8 @@ const StudioSection = () => {
               </div>
               
               <div>
-                <h4 className="text-xl font-semibold text-white mb-2">Creative Direction & Design</h4>
-                <ul className="text-sm text-gray-400 space-y-1">
+                <h4 className="text-xl font-semibold text-foreground mb-2 font-playfair">Creative Direction & Design</h4>
+                <ul className="text-sm text-muted-foreground space-y-1">
                   <li>• Visual Identity</li>
                   <li>• UI/UX Design</li>
                   <li>• Product Design</li>
@@ -51,14 +51,14 @@ const StudioSection = () => {
           </div>
           
           <div className="space-y-8 text-left">
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed">
               We believe that it is possible to live in a world where every product or 
               service is designed with an easy-to-use experience in mind.
             </p>
             
-            <div className="bg-gray-900 rounded-xl p-6">
-              <h4 className="text-lg font-semibold text-white mb-4">Our Process</h4>
-              <div className="space-y-3 text-sm text-gray-400">
+            <div className="bg-card rounded-xl p-6 border border-border">
+              <h4 className="text-lg font-semibold text-foreground mb-4 font-playfair">Our Process</h4>
+              <div className="space-y-3 text-sm text-muted-foreground">
                 <div className="flex justify-between">
                   <span>Discovery & Research</span>
                   <span>Week 1-2</span>
