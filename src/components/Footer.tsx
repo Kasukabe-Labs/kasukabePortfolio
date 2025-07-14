@@ -6,11 +6,11 @@ const Footer = () => {
     <footer id="contact" className="py-20 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          <div>
+          <div className="text-left">
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
               Let's create something
               <br />
-              <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+              <span className="text-white">
                 extraordinary
               </span>
             </h2>
@@ -26,7 +26,7 @@ const Footer = () => {
             </button>
           </div>
           
-          <div className="space-y-8">
+          <div className="space-y-8 text-left">
             <div>
               <h3 className="text-xl font-semibold text-white mb-4">Get in Touch</h3>
               <div className="space-y-3">
@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center">
           <div className="text-2xl font-bold text-white mb-4 md:mb-0">
             Kasukabe Labs
           </div>

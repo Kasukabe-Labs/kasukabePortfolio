@@ -12,8 +12,8 @@ interface ProjectCardProps {
 const ProjectCard = ({ title, subtitle, description, image, tags }: ProjectCardProps) => {
   return (
     <div className="group cursor-pointer">
-      <div className="bg-gradient-to-br from-purple-900/20 to-blue-900/20 rounded-2xl p-6 mb-6 hover:from-purple-900/30 hover:to-blue-900/30 transition-all duration-300">
-        <div className="aspect-[4/3] bg-gradient-to-br from-purple-400/20 to-blue-400/20 rounded-xl mb-4 overflow-hidden">
+      <div className="bg-gray-900 rounded-2xl p-6 mb-6 hover:bg-gray-800 transition-all duration-300">
+        <div className="aspect-[4/3] bg-gray-700 rounded-xl mb-4 overflow-hidden">
           <img 
             src={image} 
             alt={title}
